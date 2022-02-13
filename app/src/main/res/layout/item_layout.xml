@@ -46,8 +46,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#C5EDF4"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:text="Voluptates adhuc sumo capitulus absque aestus cotidie stips nisi."
-                    android:layout_margin="6dp"
                     android:letterSpacing="0.08"
                     android:textAlignment="center"
                     android:textSize="14sp"/>
@@ -62,8 +64,9 @@
                     android:id="@+id/tvBody"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="6dp"
                     android:background="#F4FDE4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:letterSpacing="0.08"
                     android:text="Delectus deduco accusamus. Assentator deprecator spes. Stipes appono corporis. Demulceo tertius spiritus. Atqui eveniet torrens. Ut civitas illum. Curtus caste alo. Celer assumenda error. Socius aut hic. Perferendis vociferor acsi. Compono usitas aestus. Umerus minima tego. Degenero confero desino. Clamo umbra succedo. Absum ademptio volutabrum."
                     android:textSize="14sp" />

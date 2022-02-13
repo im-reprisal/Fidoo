@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="50dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background=" #DBFAE0"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1.4"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvId"
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvUserId"
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:layout_width="0.6dp"
+                android:background="#C33764"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="240dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5EDF4"
+                    android:text="Voluptates adhuc sumo capitulus absque aestus cotidie stips nisi."
+                    android:layout_margin="6dp"
+                    android:letterSpacing="0.08"
+                    android:textAlignment="center"
+                    android:textSize="14sp"/>
+                <View
+                    android:layout_width="250dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:background="#C33764"
+                    android:layout_height="0.3dp"/>
+                <TextView
+                    android:id="@+id/tvBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="#F4FDE4"
+                    android:letterSpacing="0.08"
+                    android:text="Delectus deduco accusamus. Assentator deprecator spes. Stipes appono corporis. Demulceo tertius spiritus. Atqui eveniet torrens. Ut civitas illum. Curtus caste alo. Celer assumenda error. Socius aut hic. Perferendis vociferor acsi. Compono usitas aestus. Umerus minima tego. Degenero confero desino. Clamo umbra succedo. Absum ademptio volutabrum."
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

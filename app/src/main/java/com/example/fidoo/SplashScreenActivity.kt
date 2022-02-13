@@ -1,10 +1,10 @@
-package com.example.fidoo.UI
+package com.example.fidoo
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.example.fidoo.R
+import com.example.fidoo.UI.MainActivity
 
 class SplashScreenActivity : AppCompatActivity() {
     lateinit var handler: Handler
@@ -13,7 +13,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
         handler = Handler()
         handler.postDelayed({
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         } , 3000)

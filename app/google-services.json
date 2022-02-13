@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "311387139492",
+    "project_id": "fidooassignment",
+    "storage_bucket": "fidooassignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311387139492:android:c0319feb8995d43f15a531",
+        "android_client_info": {
+          "package_name": "com.example.fidoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311387139492-khggiskjihdklil2h60icajkkjol9oo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTseIMrKTv3HrS8VT8useqwoLerf79jlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311387139492-khggiskjihdklil2h60icajkkjol9oo9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

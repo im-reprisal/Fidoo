@@ -13,6 +13,7 @@ import com.example.fidoo.API.NetworkHelperClass
 import com.example.fidoo.DATA.Data
 import com.example.fidoo.UI.ADAPTER.ResponseAdapter
 import com.example.fidoo.UI.VIEWMODEL.ResponseViewModel
+import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -29,6 +30,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         responseViewModel = ViewModelProvider(this).get(ResponseViewModel::class.java)
+
+        FirebaseMessaging.getInstance().subscribeToTopic("notification")
         /**
          * starting the shimmer effect
          */

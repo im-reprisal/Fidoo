@@ -1,11 +1,13 @@
 package com.example.fidoo
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.example.fidoo.UI.MainActivity
 
+@SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
     lateinit var handler: Handler
     override fun onCreate(savedInstanceState: Bundle?) {

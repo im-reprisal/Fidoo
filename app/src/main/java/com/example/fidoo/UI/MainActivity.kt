@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         /**
          * observing each data inside the list using live data
          */
-        responseViewModel.liveData.observe(this,{
+        this.responseViewModel.liveData.observe(this) {
             it.let {
                 when (it) {
                     is NetworkHelperClass.OnSuccess -> {
@@ -59,12 +59,12 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
-        })
+        }
     }
     /**
      * setting all the data in recyclerview
      */
-    fun setAdapter() {
+    private fun setAdapter() {
         responseAdapter = ResponseAdapter(list)
         val linearLayoutManager = LinearLayoutManager(this)
         binding.recyclerView.apply {

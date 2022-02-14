@@ -6,10 +6,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object Network {
-    val httploggingintercepter= HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
-    fun getRetrofit() = Retrofit.Builder()
+    private val httpLoggingInterceptor= HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
+    fun getRetrofit(): Retrofit = Retrofit.Builder()
         .baseUrl("https://gorest.co.in/")
         .addConverterFactory(GsonConverterFactory.create())
-        .client(OkHttpClient.Builder().addInterceptor(httploggingintercepter).build())
+        .client(OkHttpClient.Builder().addInterceptor(httpLoggingInterceptor).build())
         .build()
 }

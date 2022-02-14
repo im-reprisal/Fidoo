@@ -15,7 +15,7 @@ class ResponseViewModel: ViewModel() {
     val liveData: LiveData<NetworkHelperClass> = mutableLiveData
     fun callAPi() {
         CoroutineScope(Dispatchers.IO).launch {
-            val response = responseRepository.getResponseFromAPI()
+            val response = responseRepository.getDataFromService()
             mutableLiveData.postValue(NetworkHelperClass.OnSuccess(response))
         }
     }

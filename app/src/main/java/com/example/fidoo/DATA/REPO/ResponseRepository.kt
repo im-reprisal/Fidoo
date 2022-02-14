@@ -5,9 +5,8 @@ import com.example.fidoo.API.Service
 import com.example.fidoo.DATA.Data
 
 class ResponseRepository {
-    fun getService() = Network.getRetrofit().create(Service::class.java)
-    suspend fun getResponseFromAPI(): List<Data> {
-       val response = getService().getAllData().data
-        return response
+    private fun getService(): Service = Network.getRetrofit().create(Service::class.java)
+    suspend fun getDataFromService(): List<Data> {
+        return getService().getAllData().data
     }
 }

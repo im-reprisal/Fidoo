@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface Service {
     @GET("public/v1/posts")
-    suspend fun getAllData() : Response
+    suspend fun getAllResponse() : Response
 }

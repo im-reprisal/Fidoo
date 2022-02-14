@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         responseViewModel = ViewModelProvider(this)[ResponseViewModel::class.java]
 
         /**
-         *
+         * Setting notification using Firebase
          */
         FirebaseMessaging.getInstance().subscribeToTopic("notification")
         /**

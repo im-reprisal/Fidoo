@@ -29,8 +29,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        responseViewModel = ViewModelProvider(this).get(ResponseViewModel::class.java)
+        responseViewModel = ViewModelProvider(this)[ResponseViewModel::class.java]
 
+        /**
+         *
+         */
         FirebaseMessaging.getInstance().subscribeToTopic("notification")
         /**
          * starting the shimmer effect
@@ -49,8 +52,15 @@ class MainActivity : AppCompatActivity() {
             it.let {
                 when (it) {
                     is NetworkHelperClass.OnSuccess -> {
-                        binding.shimmerFrameLayout.stopShimmerAnimation()
-                        binding.recyclerView.visibility = View.VISIBLE
+                        /**
+                         * stopping shimmer effect, setting visibility gone for shimmer layout and setting the visibility
+                         * of recycler view to show data
+                         */
+                        binding.apply {
+                            shimmerFrameLayout.stopShimmerAnimation()
+                            recyclerView.visibility = View.VISIBLE
+                            shimmerFrameLayout.visibility = View.GONE
+                        }
                         list = it.responseList as ArrayList<Data>
                         setAdapter()
                     }
